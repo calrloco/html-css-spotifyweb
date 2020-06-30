@@ -1,0 +1,34 @@
+.container-flex{
+    display: flex;
+    height: 100vh;
+}
+.container-right{
+    display: flex;
+    flex: 1;
+    background-color: green;
+    flex-direction: column;
+    
+}
+.aside-box{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    flex: 0 0 200px;
+    
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+}
+.player{
+    height: 90px;
+    background-color: #181818;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

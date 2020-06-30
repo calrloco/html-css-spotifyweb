@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    
+}
+
+$black-sidebar:#040404;
+$background-main:(hsl(0, 0%, 7%));
+$background-color-header:(hsl(0, 0%, 3%));
+$background-main:(hsl(0, 0%, 7%));
+$font-grey-light:#b3b3b3;

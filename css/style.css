@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw; }
+
+.container-flex {
+  display: flex;
+  height: 100vh; }
+
+.container-right {
+  display: flex;
+  flex: 1;
+  background-color: green;
+  flex-direction: column; }
+
+.aside-box {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  flex: 0 0 200px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll; }
+
+.player {
+  height: 90px;
+  background-color: #181818;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+.aside {
+  color: #b3b3b3;
+  display: flex;
+  background-color: black;
+  flex: 0 0;
+  flex-direction: column; }
+  .aside__logo {
+    display: flex;
+    flex: 1;
+    align-items: center; }
+    .aside__logo img {
+      height: 6rem;
+      padding-left: 1.4rem; }
+  .aside__menu-list {
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 0 0.8rem; }
+    .aside__menu-list-items {
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      margin-bottom: 1rem;
+      height: 4rem;
+      border-radius: 4px; }
+  .aside__playlist {
+    padding: 0 0.8rem; }
+    .aside__playlist-heading {
+      padding: 0 16px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      padding: 0 1.6rem; }
+    .aside__playlist__add {
+      display: flex;
+      margin: 1rem 0;
+      align-items: center;
+      padding: 0 1.6rem; }
+      .aside__playlist__add-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: #000;
+        height: 3.2rem;
+        width: 3.2rem;
+        background-color: #b3b3b3;
+        padding: 0.4rem;
+        margin-right: 1.6rem; }
+      .aside__playlist__add-title {
+        font-size: 1.4rem; }
+    .aside__playlist-list {
+      display: flex;
+      flex-direction: column;
+      list-style: none; }
+      .aside__playlist-list-items {
+        display: flex;
+        margin: 1rem 0;
+        padding: 0 1.6rem;
+        font-weight: 700; }
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #080808;
+  height: 70px; }
+  .header__btn {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.76px;
+    margin-right: 1rem; }
+    .header__btn-button {
+      text-decoration: none;
+      color: #fff;
+      padding: 1.5rem;
+      border: 1px solid #fff;
+      border-radius: 100px; }
+
+.nav-user {
+  display: flex;
+  flex: 1 0 5rem; }
+  .nav-user__menu {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b3b3b3; }
+    .nav-user__menu-items {
+      margin-right: 2rem;
+      cursor: pointer; }
+
+.music-menu {
+  display: flex;
+  background-color: cadetblue;
+  flex: 0 0 100%;
+  padding: 1.6rem 3.2rem 0; }
+
+.recently-played {
+  display: flex;
+  flex-direction: column; }
+
+.recently-played {
+  display: flex;
+  color: #fff;
+  flex: 1; }
+  .recently-played__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 2rem 0; }
+  .recently-played-author {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize; }
+  .recently-played__cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-right: 3.2rem; }
+    .recently-played__cards-box {
+      display: flex;
+      flex: 1; }
+    .recently-played__cards-top {
+      position: relative;
+      height: 20rem;
+      cursor: pointer; }
+      .recently-played__cards-top-img {
+        height: 20rem;
+        width: 202.453px; }
+      .recently-played__cards-top-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6rem;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: all 0.2s cubic-bezier(0.76, 0.01, 0.29, 1.01); }
+      .recently-played__cards-top:hover > .recently-played__cards-top-overlay {
+        opacity: 1; }
+  .recently-played-description {
+    color: #b3b3b3;
+    font-size: 1.4rem;
+    font-weight: 700; }
