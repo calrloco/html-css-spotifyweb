@@ -1,11 +1,11 @@
 .container-flex {
-  display: flex; }
+  display: flex;
+  height: 100vh; }
 
 .container-right {
   display: flex;
   flex: 1 0;
   width: calc(100% - 200px);
-  height: 100vh;
   background: radial-gradient(circle, #535353 0%, #212121 100%);
   flex-direction: column; }
 
@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: column;
   flex: 0 1 200px;
-  height: 100vh;
   background: #040404; }
   @media screen and (max-width: 463px) {
     .aside-box {
@@ -143,7 +142,12 @@ body {
       color: #fff;
       padding: 1.5rem;
       border: 1px solid #fff;
-      border-radius: 100px; }
+      border-radius: 100px;
+      transition: all .2s; }
+      .header__btn-button:hover {
+        background-color: #fff;
+        color: #b3b3b3;
+        transform: scale(1.5); }
 
 .nav-user {
   display: flex;
@@ -179,9 +183,12 @@ body {
         transition: all .3s;
         z-index: 0; }
       .nav-user__menu-items:hover {
-        color: #fff; }
+        color: #fff;
+        transform: scale(1.2); }
       .nav-user__menu-items:hover::before {
         width: 100%; }
+      .nav-user__menu-items:active {
+        transform: scale(1.1); }
 
 .music-menu {
   display: flex;
