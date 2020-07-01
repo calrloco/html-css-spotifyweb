@@ -1,6 +1,6 @@
 .container-flex{
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 .container-right{
     display: flex;
