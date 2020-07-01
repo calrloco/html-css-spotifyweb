@@ -51,6 +51,8 @@ body {
   background-color: #040404;
   flex: 0 0;
   flex-direction: column; }
+  .aside-icons {
+    height: 3rem; }
   .aside__logo {
     display: flex;
     flex: 1;
@@ -78,6 +80,8 @@ body {
       @media screen and (max-width: 463px) {
         .aside__menu-list-items {
           display: none; } }
+      .aside__menu-list-items-home {
+        margin-left: 1rem; }
   .aside__playlist {
     padding: 0 0.8rem; }
     .aside__playlist-heading {
@@ -160,7 +164,24 @@ body {
         display: none; } }
     .nav-user__menu-items {
       margin-right: 2rem;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      transition: all .2s; }
+      .nav-user__menu-items::before {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background-color: green;
+        display: block;
+        transition: all .3s;
+        z-index: 0; }
+      .nav-user__menu-items:hover {
+        color: #fff; }
+      .nav-user__menu-items:hover::before {
+        width: 100%; }
 
 .music-menu {
   display: flex;
