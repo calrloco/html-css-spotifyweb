@@ -1,3 +1,37 @@
+.container-flex {
+  display: flex; }
+
+.container-right {
+  display: flex;
+  flex: 1 0;
+  width: calc(100% - 200px);
+  height: 100vh;
+  background: radial-gradient(circle, #535353 0%, #212121 100%);
+  flex-direction: column; }
+
+.aside-box {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 200px;
+  height: 100vh;
+  background: #040404; }
+  @media screen and (max-width: 463px) {
+    .aside-box {
+      flex: 0 1 60px; } }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto; }
+
+.player {
+  height: 90px;
+  background-color: #181818;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
 *,
 *::before,
 *::after {
@@ -9,46 +43,12 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
-  max-height: 100vh;
-  width: 100vw;
-  max-width: 100vw; }
-
-.container-flex {
-  display: flex;
-  flex: 0 1;
-  height: 100vh; }
-
-.container-right {
-  display: flex;
-  flex: 0 1;
-  background-color: green;
-  flex-direction: column; }
-
-.aside-box {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  flex: 1 1 200px; }
-
-.main {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-y: scroll; }
-
-.player {
-  height: 90px;
-  background-color: #181818;
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
+  font-family: 'Montserrat', sans-serif; }
 
 .aside {
   color: #b3b3b3;
   display: flex;
-  background-color: black;
+  background-color: #040404;
   flex: 0 0;
   flex-direction: column; }
   .aside__logo {
@@ -58,6 +58,9 @@ body {
     .aside__logo img {
       height: 6rem;
       padding-left: 1.4rem; }
+      @media screen and (max-width: 463px) {
+        .aside__logo img {
+          display: none; } }
   .aside__menu-list {
     color: #fff;
     font-size: 1.4rem;
@@ -72,6 +75,9 @@ body {
       margin-bottom: 1rem;
       height: 4rem;
       border-radius: 4px; }
+      @media screen and (max-width: 463px) {
+        .aside__menu-list-items {
+          display: none; } }
   .aside__playlist {
     padding: 0 0.8rem; }
     .aside__playlist-heading {
@@ -79,11 +85,17 @@ body {
       font-size: 2.4rem;
       font-weight: 700;
       padding: 0 1.6rem; }
+      @media screen and (max-width: 463px) {
+        .aside__playlist-heading {
+          display: none; } }
     .aside__playlist__add {
       display: flex;
       margin: 1rem 0;
       align-items: center;
       padding: 0 1.6rem; }
+      @media screen and (max-width: 463px) {
+        .aside__playlist__add {
+          display: none; } }
       .aside__playlist__add-icon {
         display: flex;
         align-items: center;
@@ -101,6 +113,9 @@ body {
       display: flex;
       flex-direction: column;
       list-style: none; }
+      @media screen and (max-width: 463px) {
+        .aside__playlist-list {
+          display: none; } }
       .aside__playlist-list-items {
         display: flex;
         margin: 1rem 0;
@@ -111,7 +126,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #080808;
+  background-color: rgba(0, 0, 0, 0.3);
   height: 70px; }
   .header__btn {
     color: #fff;
@@ -130,8 +145,9 @@ body {
   display: flex;
   flex: 1 1 5rem; }
   .nav-user__menu {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -139,24 +155,21 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #b3b3b3; }
+    @media screen and (max-width: 742px) {
+      .nav-user__menu {
+        display: none; } }
     .nav-user__menu-items {
       margin-right: 2rem;
       cursor: pointer; }
 
 .music-menu {
   display: flex;
-  background-color: cadetblue;
-  flex: 1 1 100%;
-  padding: 1.6rem 3.2rem 0; }
-
-.recently-played {
-  display: flex;
+  flex: 0 1 100%;
+  padding: 1.6rem 3.2rem 0;
   flex-direction: column; }
 
 .recently-played {
-  display: flex;
-  color: #fff;
-  flex: 1; }
+  color: #fff; }
   .recently-played__heading {
     font-size: 2.4rem;
     font-weight: 700;
@@ -173,14 +186,16 @@ body {
     padding-right: 3.2rem; }
     .recently-played__cards-box {
       display: flex;
-      flex: 1 1; }
+      flex-wrap: wrap; }
     .recently-played__cards-top {
+      display: flex;
       position: relative;
       height: 20rem;
       cursor: pointer; }
       .recently-played__cards-top-img {
         height: 20rem;
-        width: 202.453px; }
+        width: 202.453px;
+        flex: 0 1; }
       .recently-played__cards-top-overlay {
         display: flex;
         justify-content: center;
@@ -200,3 +215,33 @@ body {
     color: #b3b3b3;
     font-size: 1.4rem;
     font-weight: 700; }
+
+.suggestion {
+  display: flex; }
+
+.player {
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center; }
+  .player-left {
+    display: flex;
+    align-items: center; }
+    .player-left-pic {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      padding-right: 4rem; }
+      .player-left-pic p {
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 700; }
+    .player-left img {
+      height: 50px;
+      width: auto;
+      padding-right: 2rem; }
+    .player-left-icons {
+      color: #fff;
+      font-size: 2rem; }
+      .player-left-icons i {
+        padding-right: 2rem; }

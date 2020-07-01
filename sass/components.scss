@@ -2,7 +2,7 @@
 .aside {
     color: $font-grey-light;
     display: flex;
-    background-color: black;
+    background-color: #040404;
     flex: 0 0;
     flex-direction: column;
     &__logo {
@@ -13,8 +13,13 @@
         & img {
             height: 6rem;
             padding-left: 1.4rem;
+            @media screen and (max-width:463px){
+                display: none;
+             }
         }
+      
     }
+    
     &__menu {
         &-list {
             color: #fff;
@@ -30,6 +35,9 @@
                 margin-bottom: 1rem;
                 height: 4rem;
                 border-radius: 4px;
+                @media screen and (max-width:463px){
+                    display: none;
+                 }
             }
         }
     }
@@ -40,12 +48,19 @@
             font-size: 2.4rem;
             font-weight: 700;
             padding: 0 1.6rem;
+                @media screen and (max-width:463px){
+            display: none;
+         }
+       
         }
         &__add {
             display: flex;
             margin: 1rem 0;
             align-items: center;
             padding: 0 1.6rem;
+            @media screen and (max-width:463px){
+                display: none;
+             }
             &-icon {
                 display: flex;
                 align-items: center;
@@ -66,12 +81,16 @@
            display: flex;
            flex-direction: column;
            list-style: none;
+           @media screen and (max-width:463px){
+            display: none;
+         }
            
             &-items{
                 display: flex;
                 margin: 1rem 0;
                 padding: 0 1.6rem;
                 font-weight: 700;
+              
             }
         }
     }
@@ -107,8 +126,9 @@
     flex: 1 1 5rem;
   
       &__menu{
-        width: 100%;
         display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
         list-style: none;
         justify-content: center;
         align-items: center;
@@ -116,6 +136,10 @@
         font-weight: 700;
         text-transform: uppercase;
         color: $font-grey-light;
+        
+        @media screen and (max-width:742px){
+            display: none;
+        }
         &-items{
          margin-right: 2rem;
          cursor: pointer;
@@ -125,29 +149,19 @@
 //////////music menu////////////
 .music-menu {
     display: flex;
-    background-color: cadetblue;
-    flex: 1 1 100%;
+    flex: 0 1 100%;
     padding: 1.6rem 3.2rem 0;
-}
-
-////////recently played////////
-.recently-played {
-    display: flex;
     flex-direction: column;
-
-    &__heading {
-    }
-
-    &__cards-box {
-    }
-    &__cards {
-    }
 }
+
+
+
 ///////////recently played/////////
 .recently-played{
-    display: flex;
     color: #fff;
-    flex: 1;
+    
+    
+    
    &__heading{
        font-size: 2.4rem;
        font-weight: 700;
@@ -166,21 +180,22 @@
         font-size: 1.4rem;
         padding-right: 3.2rem;
         
+        
 
         &-box{
             display: flex;
-            flex: 1 1;
-            
+            flex-wrap: wrap;
         }
         &-top{
+            display: flex;
            position: relative;
            height: 20rem;
            cursor: pointer;
-           
-            &-img{
+            
+           &-img{
                 height: 20rem;
                 width: 202.453px;
-               
+                flex: 0 1;
             }
             &-overlay{
               display: flex;
@@ -211,3 +226,49 @@
         font-weight: 700;
     }
 }
+.suggestion{
+    display: flex;
+    
+
+}
+////////palayer//////////
+.player{
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center;
+
+  &-left{
+    display: flex;
+    align-items: center;
+    &-pic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        padding-right: 4rem;
+        & p{
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+
+    & img{
+        height: 50px;
+        width: auto;
+        padding-right: 2rem;
+    }
+    &-icons{
+        color: #fff;
+        font-size: 2rem;
+
+        & i{
+            padding-right: 2rem;
+        }
+    }
+ 
+  }
+}
+   
+
+    
