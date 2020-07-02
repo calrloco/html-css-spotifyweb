@@ -723,19 +723,19 @@
    
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 13px;
     
   }
   
  
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px $font-grey-light; 
+    box-shadow: inset 0 0 10px rgba($black-sidebar,.8); 
    
   }
    
  
   ::-webkit-scrollbar-thumb {
-    background: rgba($black-sidebar,.8); 
+    background: rgba($font-grey-light,.2); 
     
   }
   

@@ -581,12 +581,12 @@ body {
   margin-bottom: 2.4rem; }
 
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 13px; }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px #b3b3b3; }
+  box-shadow: inset 0 0 10px rgba(4, 4, 4, 0.8); }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(4, 4, 4, 0.8); }
+  background: rgba(179, 179, 179, 0.2); }
 
 /* Handle on hover */
