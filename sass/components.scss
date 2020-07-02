@@ -259,10 +259,15 @@
         &-button {
             text-decoration: none;
             color: $font-grey-light;
-            padding: 1.5rem;
+            padding: 1.2rem;
             border: 1.5px solid #fff;
             border-radius: 100px;
             transition: all .2s;
+            
+            @media screen and (max-width:483px) {
+                padding: 1rem;
+            }
+
             &:hover{
                 background-color: #1db954;
                 border: 1.5px solid #1db954;
