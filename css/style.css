@@ -14,7 +14,7 @@
   flex-direction: column;
   flex: 0 1 200px;
   background: #040404; }
-  @media screen and (max-width: 463px) {
+  @media screen and (max-width: 483px) {
     .aside-box {
       flex: 0 1 60px; } }
 
@@ -57,20 +57,20 @@ body {
     flex: 1;
     align-items: center;
     padding-top: 2.4rem; }
-    @media screen and (max-width: 463px) {
+    @media screen and (max-width: 483px) {
       .aside__logo {
         justify-content: center; } }
     .aside__logo .logo-big {
       height: 6rem;
       padding-left: 1.4rem; }
-      @media screen and (max-width: 463px) {
+      @media screen and (max-width: 483px) {
         .aside__logo .logo-big {
           display: none; } }
     .aside__logo .logo-small {
       height: 3rem;
       display: none;
       margin-left: 1.2rem; }
-      @media screen and (max-width: 463px) {
+      @media screen and (max-width: 483px) {
         .aside__logo .logo-small {
           display: block; } }
   .aside__menu-list {
@@ -91,7 +91,7 @@ body {
         color: #fff; }
       .aside__menu-list-items-home {
         margin-left: 1rem; }
-        @media screen and (max-width: 463px) {
+        @media screen and (max-width: 483px) {
           .aside__menu-list-items-home {
             display: none; } }
       .aside__menu-list-items::before {
@@ -117,7 +117,7 @@ body {
       font-weight: 700;
       padding: 0 1.6rem;
       margin-top: 2rem; }
-      @media screen and (max-width: 463px) {
+      @media screen and (max-width: 483px) {
         .aside__playlist-heading {
           display: none; } }
     .aside__playlist__add {
@@ -130,7 +130,7 @@ body {
       .aside__playlist__add:hover i {
         color: #fff;
         transform: scale(1.2); }
-      @media screen and (max-width: 463px) {
+      @media screen and (max-width: 483px) {
         .aside__playlist__add {
           display: none; } }
       .aside__playlist__add-icon {
@@ -154,7 +154,7 @@ body {
       display: flex;
       flex-direction: column;
       list-style: none; }
-      @media screen and (max-width: 463px) {
+      @media screen and (max-width: 483px) {
         .aside__playlist-list {
           display: none; } }
       .aside__playlist-list-items {
@@ -173,7 +173,7 @@ body {
     padding: 0 24px;
     position: relative;
     color: #b3b3b3; }
-    @media screen and (max-width: 463px) {
+    @media screen and (max-width: 483px) {
       .aside__user {
         display: none; } }
     .aside__user-install {
