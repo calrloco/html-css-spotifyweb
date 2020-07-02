@@ -102,6 +102,12 @@ body {
       .aside__menu-list-items:hover::before {
         height: 100%;
         background-color: #1db954; }
+      .aside__menu-list-items-active {
+        content: "";
+        height: 0%;
+        width: .3rem;
+        background-color: #fff;
+        margin-right: 2.4rem; }
   .aside__playlist {
     padding: 0 0.8rem; }
     .aside__playlist-heading {
@@ -384,7 +390,8 @@ body {
       flex: 1 1; }
       .player-left-icons i {
         padding-right: 2rem;
-        cursor: pointer; }
+        cursor: pointer;
+        font-size: 1.5rem; }
   .player-center {
     display: flex;
     flex-direction: column;
@@ -393,43 +400,12 @@ body {
     flex: 1 1 auto; }
     .player-center__top {
       display: flex;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #fff;
       flex: 1 1 40%; }
       .player-center__top i {
         cursor: pointer;
         padding-right: 2rem; }
-    .player-center-bottom__scroll {
-      width: 50%;
-      margin-right: 3.5rem;
-      height: 3px;
-      background-color: red;
-      align-self: center;
-      justify-self: center;
-      margin-top: 2rem;
-      position: relative;
-      cursor: pointer; }
-      .player-center-bottom__scroll-bar {
-        position: absolute;
-        width: 20%;
-        height: 3px;
-        background-color: blue;
-        align-self: center;
-        top: 0%; }
-      .player-center-bottom__scroll-circle {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #fff;
-        align-self: center;
-        left: 20%;
-        top: 50%;
-        transform: translateY(-50%);
-        display: none;
-        transition: all .1s; }
-      .player-center-bottom__scroll:hover .player-center-bottom__scroll-circle {
-        display: block; }
   .player-right {
     display: flex;
     flex: 1 1 30%;
@@ -443,7 +419,8 @@ body {
       font-size: 1.5rem;
       cursor: pointer;
       padding-right: 1.5rem;
-      color: #fff; }
+      color: #fff;
+      display: block; }
     .player-right__scroll-bar {
       width: 6rem;
       height: 3px;
@@ -451,24 +428,49 @@ body {
       align-self: center; }
 
 .slide-container {
-  width: 75%; }
+  width: 75%;
+  margin-top: 2rem; }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 1rem;
-  background: linear-gradient(90deg, #75fc75 60%, #d6d6d6 60%);
+  height: .5rem;
+  background: linear-gradient(90deg, #d6d6d6 60%, #d6d6d6 60%);
   outline: none;
   opacity: 0.7;
   transition: opacity .2s;
   border-radius: 12px;
   position: relative; }
+  .slider-2 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: .5rem;
+    background: linear-gradient(90deg, #d6d6d6 60%, #d6d6d6 60%);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 12px;
+    position: relative; }
+    .slider-2::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 1.2rem;
+      width: 1.2rem;
+      background: white;
+      border-radius: 50%;
+      cursor: pointer; }
+    .slider-2::-moz-slider-thumb {
+      -webkit-appearance: none;
+      height: 4rem;
+      width: 4rem;
+      background: white;
+      border-radius: 50%;
+      cursor: pointer; }
   .slider:hover {
     opacity: 1; }
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 4rem;
-    width: 4rem;
+    height: 1.2rem;
+    width: 1.2rem;
     background: white;
     border-radius: 50%;
     cursor: pointer; }
@@ -483,9 +485,17 @@ body {
     content: "3.40";
     position: absolute;
     color: #fff;
-    left: 100%; }
+    bottom: -109%;
+    left: 110%; }
   .slider::before {
     content: "0";
     position: absolute;
     color: #fff;
-    right: 100%; }
+    left: -15%;
+    bottom: -109%; }
+
+#value {
+  color: transparent; }
+
+.test {
+  background-color: red; }
