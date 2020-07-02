@@ -302,6 +302,9 @@ body {
     font-size: 2.4rem;
     font-weight: 700;
     margin: 2.4rem 0; }
+    @media screen and (max-width: 483px) {
+      .recently-played__heading {
+        text-align: center; } }
   .recently-played-author {
     font-size: 1.6rem;
     font-weight: 700;
@@ -313,9 +316,15 @@ body {
     font-size: 1.4rem;
     padding-right: 3.2rem;
     padding-bottom: 3.9rem; }
+    @media screen and (max-width: 483px) {
+      .recently-played__cards {
+        padding: 3.9rem 0 0 0; } }
     .recently-played__cards-box {
       display: flex;
       flex-wrap: wrap; }
+      @media screen and (max-width: 483px) {
+        .recently-played__cards-box {
+          justify-content: center; } }
     .recently-played__cards-top {
       display: flex;
       position: relative;
@@ -356,6 +365,10 @@ body {
     font-size: 1.4rem;
     padding-right: 3.2rem;
     padding-bottom: 3.9rem; }
+    @media screen and (max-width: 483px) {
+      .scelti__per-te__cards {
+        padding-right: 0;
+        padding-bottom: 3.9rem; } }
     .scelti__per-te__cards-bottom {
       padding-top: 1.7rem; }
     .scelti__per-te__cards-top {

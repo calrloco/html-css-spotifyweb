@@ -345,6 +345,10 @@
        font-size: 2.4rem;
        font-weight: 700;
        margin: 2.4rem 0;
+
+       @media screen and (max-width:483px){
+        text-align: center;
+    }
    }
    &-author{
        font-size: 1.6rem;
@@ -360,11 +364,18 @@
         padding-right: 3.2rem;
         padding-bottom: 3.9rem;
         
+        @media screen and (max-width:483px){
+            padding: 3.9rem 0 0 0;
+
+        }
 
         &-box{
             display: flex;
             flex-wrap: wrap;
-            
+           
+            @media screen and (max-width:483px){
+                justify-content:center;
+            }
         }
         &-top{
             display: flex;
@@ -419,7 +430,11 @@
         font-size: 1.4rem;
         padding-right: 3.2rem;
         padding-bottom: 3.9rem;
-
+        
+        @media screen and (max-width:483px){
+            padding-right:0;
+            padding-bottom: 3.9rem;
+        }
         &-bottom{
               
             padding-top: 1.7rem;
