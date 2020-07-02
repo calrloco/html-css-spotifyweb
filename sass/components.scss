@@ -30,7 +30,7 @@
         & .logo-small{
             height: 3rem;
             display: none;
-
+            margin-left: 1.2rem;
             @media screen and (max-width:463px){
                 display: block;
                 
@@ -112,6 +112,13 @@
             align-items: center;
             padding: 0 1.6rem;
             
+            & i{
+                transition: all .2s ease-out;
+            }
+            &:hover i{
+               color: #fff;
+               transform: scale(1.2);
+            }
             @media screen and (max-width:463px){
                 display: none;
              }
@@ -163,7 +170,7 @@
         flex: 1;
         padding: 0 24px;
         position: relative;
-        color: #fff;
+        color: $font-grey-light;
         @media screen and (max-width:463px){
             display: none;
          }
@@ -171,18 +178,27 @@
             flex: 1;
             display: flex;
             align-items: flex-end;
-            border-bottom: 2px solid #fff;
+            border-bottom: 1px solid $font-grey-light;
             padding-bottom: 1rem;
         }
         & i{
             cursor: pointer;
             padding-right: 1.5rem;
             font-size: 1.5rem;
+
+            &:hover{
+                color: #fff;
+            }
         }
         & p{
             text-align: center;
             font-size: 1.4rem;
             font-weight: 700;
+            cursor: pointer;
+
+            &:hover{
+                color: #fff;
+            }
         }
          &-bottom-icon{
              display: flex;
@@ -196,6 +212,7 @@
             & img{
             height: 4rem;
             clip-path: circle();
+            cursor: pointer;
             
         }
         
@@ -449,6 +466,7 @@
   align-items: center;
   justify-content: space-between;
   
+ 
   
   &-left{
     flex: 1 1 30%;
@@ -462,6 +480,11 @@
         font-size: 1rem;
         padding-right: 4rem;
 
+        @media screen and (max-width:738px){
+          padding-right: 0rem;
+        
+        }
+
         & p{
             color: #fff;
             text-transform: capitalize;
@@ -474,18 +497,46 @@
         width: auto;
         padding-right: 2rem;
         flex: 1 1;
+        @media screen and (max-width:463px){
+            padding-right: 0rem;
+          
+          }
+
+        @media screen and (max-width:738px){
+           height: 20px;
+           padding-right: .9rem;
+        }
     }
     &-icons{
         color: #fff;
         font-size: 2rem;
         flex: 1 1;
+        @media screen and (max-width:556px){
+                flex: 0 1;
+         }
+         @media screen and (max-width:463px){
+            
+     }
         & i{
             padding-right: 2rem;
             cursor: pointer;
             font-size: 1.5rem;
+            @media screen and (max-width:738px){
+                
+                padding-right: .2rem;
+             }
+             @media screen and (max-width:379px){
+                
+                display: none;
+             }
         }
     }
  
+  }
+  #icon-responsive{
+    @media screen and (max-width:556px){
+        display: none;
+ }
   }
   &-center{
     
@@ -503,6 +554,10 @@
           cursor: pointer;
           padding-right: 2rem;
        
+          @media screen and (max-width:723px){
+            
+            padding-right: .7rem;
+          }
       }
     }
 
@@ -524,7 +579,8 @@
         padding-right: 1.5rem;
         color: #fff;
         display: block;
-
+        
+        
       
     }
     &__scroll-bar{
@@ -551,7 +607,7 @@
   transition: opacity .2s;
   border-radius: 12px;
   position: relative;
-
+  margin-right: 2rem;
   &-2{
     -webkit-appearance: none;
     width: 100%;
@@ -606,6 +662,11 @@
        color:#fff;
        bottom: -109%;
        left: 110%;
+
+       @media screen and (max-width:723px){
+        display: none;
+      
+      }
       
    }
    &::before{
@@ -614,6 +675,11 @@
     color:#fff;
     left: -15%;
     bottom: -109%;
+
+    @media screen and (max-width:723px){
+        display: none;
+      
+      }
     
 }
    
