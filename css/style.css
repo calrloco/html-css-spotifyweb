@@ -581,7 +581,7 @@ body {
         display: none; } }
 
 #value {
-  color: transparent; }
+  display: none; }
 
 .mobile-margin-bottom {
   margin-bottom: 2.4rem; }
