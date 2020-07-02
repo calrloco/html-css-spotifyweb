@@ -56,7 +56,7 @@ body {
     display: flex;
     flex: 1;
     align-items: center;
-    padding-top: 2.4rem; }
+    padding-top: 1.3rem; }
     @media screen and (max-width: 483px) {
       .aside__logo {
         justify-content: center;
@@ -410,6 +410,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (max-width: 376px) {
+    .player {
+      padding: 0 .5rem; } }
   .player-left {
     flex: 1 1 30%;
     display: flex;
