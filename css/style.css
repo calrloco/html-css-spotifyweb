@@ -577,7 +577,7 @@ body {
     content: "0";
     position: absolute;
     color: #fff;
-    left: -14%;
+    left: -13.5%;
     bottom: -109%; }
     @media screen and (max-width: 723px) {
       .slider::before {
