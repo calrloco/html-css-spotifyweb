@@ -428,9 +428,13 @@ body {
         .player-left-pic {
           padding-right: 1rem; } }
       .player-left-pic p {
+        font-size: 1.3rem;
         color: #fff;
         text-transform: capitalize;
         font-weight: 700; }
+        @media screen and (max-width: 530px) {
+          .player-left-pic p {
+            font-size: 1rem; } }
     .player-left img {
       height: 50px;
       width: auto;
