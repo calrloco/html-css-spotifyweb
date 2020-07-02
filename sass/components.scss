@@ -17,6 +17,7 @@
         
         @media screen and (max-width:483px){
             justify-content: center;
+            padding-top: 2rem;
          }
         
         & .logo-big {
@@ -30,7 +31,7 @@
         & .logo-small{
             height: 3rem;
             display: none;
-            margin-left: 1.2rem;
+            margin-left: .2rem;
             @media screen and (max-width:483px){
                 display: block;
                 
@@ -73,6 +74,11 @@
                     width: .3rem;
                     background-color: #fff;
                     margin-right: 2.4rem;
+                    
+                    @media screen and (max-width:483px){
+                        margin-right: 1.8rem;
+                        
+                    }
 
                 }
                 &:hover::before{
@@ -92,8 +98,14 @@
         background-color: #1db954;
         margin-right: 2.4rem;
 
+        @media screen and (max-width:483px){
+            margin-right: 1.8rem;
+            
+        }
+
     }
     &__playlist {
+        font-size: 1.2rem;
         padding: 0 0.8rem;
         &-heading {
             padding: 0 16px;
@@ -496,7 +508,7 @@
         padding-right: 4rem;
 
         @media screen and (max-width:738px){
-          padding-right: 0rem;
+          padding-right: 1rem;
         
         }
 
@@ -577,6 +589,7 @@
     }
 
   }
+
   &-right{
      display: flex;
      flex: 1 1 30%;

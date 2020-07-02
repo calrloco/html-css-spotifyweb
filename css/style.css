@@ -59,7 +59,8 @@ body {
     padding-top: 2.4rem; }
     @media screen and (max-width: 483px) {
       .aside__logo {
-        justify-content: center; } }
+        justify-content: center;
+        padding-top: 2rem; } }
     .aside__logo .logo-big {
       height: 6rem;
       padding-left: 1.4rem; }
@@ -69,7 +70,7 @@ body {
     .aside__logo .logo-small {
       height: 3rem;
       display: none;
-      margin-left: 1.2rem; }
+      margin-left: .2rem; }
       @media screen and (max-width: 483px) {
         .aside__logo .logo-small {
           display: block; } }
@@ -100,6 +101,9 @@ body {
         width: .3rem;
         background-color: #fff;
         margin-right: 2.4rem; }
+        @media screen and (max-width: 483px) {
+          .aside__menu-list-items::before {
+            margin-right: 1.8rem; } }
       .aside__menu-list-items:hover::before {
         height: 100%;
         background-color: #1db954; }
@@ -109,7 +113,11 @@ body {
     width: .3rem;
     background-color: #1db954;
     margin-right: 2.4rem; }
+    @media screen and (max-width: 483px) {
+      .aside .active::before {
+        margin-right: 1.8rem; } }
   .aside__playlist {
+    font-size: 1.2rem;
     padding: 0 0.8rem; }
     .aside__playlist-heading {
       padding: 0 16px;
@@ -414,7 +422,7 @@ body {
       padding-right: 4rem; }
       @media screen and (max-width: 738px) {
         .player-left-pic {
-          padding-right: 0rem; } }
+          padding-right: 1rem; } }
       .player-left-pic p {
         color: #fff;
         text-transform: capitalize;
