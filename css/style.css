@@ -102,12 +102,12 @@ body {
       .aside__menu-list-items:hover::before {
         height: 100%;
         background-color: #1db954; }
-      .aside__menu-list-items-active {
-        content: "";
-        height: 0%;
-        width: .3rem;
-        background-color: #fff;
-        margin-right: 2.4rem; }
+  .aside .active::before {
+    content: "";
+    height: 100%;
+    width: .3rem;
+    background-color: #1db954;
+    margin-right: 2.4rem; }
   .aside__playlist {
     padding: 0 0.8rem; }
     .aside__playlist-heading {
@@ -157,6 +157,8 @@ body {
         padding: 0 1.6rem;
         font-weight: 700;
         cursor: pointer; }
+        .aside__playlist-list-items:hover {
+          color: #fff; }
   .aside__user {
     display: flex;
     flex-direction: column;
@@ -265,6 +267,16 @@ body {
         width: 100%; }
       .nav-user__menu-items:active {
         transform: scale(1.1); }
+
+.active-2::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #1db954;
+  display: block; }
 
 .music-menu {
   display: flex;
