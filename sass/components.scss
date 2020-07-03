@@ -578,7 +578,6 @@
  }
   }
   &-center{
-    
      display: flex;
      flex-direction: column;
      align-content: center;
@@ -649,7 +648,7 @@
   border-radius: 12px;
   position: relative;
   margin-right: 2rem;
-  &-2{
+  &s{
     -webkit-appearance: none;
     width: 100%;
     height: .5rem;
@@ -749,6 +748,7 @@
     background: rgba($font-grey-light,.2); 
     
   }
+  
   
   /* Handle on hover */
   
