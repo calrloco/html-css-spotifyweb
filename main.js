@@ -13,6 +13,12 @@ slider.addEventListener("mousemove", function(){
    slider.style.background = color; 
 
 });
+slider.addEventListener("touchmove", function(){
+    var x = slider.value;
+    var color = 'linear-gradient(90deg, rgb(29,185,84)' + x + '%, rgb(214,214,214)' + x + '%)';
+    slider.style.background = color; 
+ 
+ });
 
 
 
@@ -32,3 +38,9 @@ sliders.addEventListener("mousemove", function(){
    sliders.style.background = color; 
 
 });
+sliders.addEventListener("touchmove", function(){
+    var y = sliders.value;
+    var color = 'linear-gradient(90deg, rgb(29,185,84)' + y + '%, rgb(214,214,214)' + y + '%)';
+    sliders.style.background = color; 
+ 
+ });
